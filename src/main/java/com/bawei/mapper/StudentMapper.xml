@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace 对应的是接口的全名 -->
+<mapper namespace="com.bawei.mapper.StudentMapper">
+    <select id="list" resultType="com.bawei.bean.Student">
+        select * from student
+    </select>
+	<insert id="add">
+        insert into student values (null,#{sname},#{sdata})
+    </insert>
+    <select id="listupd" resultType="com.bawei.bean.Student">
+        select * from student
+    </select>
+    <select id="getstudentid" resultType="com.bawei.bean.Student">
+        select * from student where id = #{id}
+    </select>
+    <update id="update">
+        update student set sname = #{sname},sdata = #{sdata} where id = #{id}
+    </update>
+    <delete id="delete">
+        delete from student where id=#{id}
+    </delete>
+    <delete id="delAll">
+        delete from student where id in (${value })
+    </delete>
+</mapper>
