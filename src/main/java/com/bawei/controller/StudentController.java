@@ -18,6 +18,7 @@ public class StudentController {
     @Autowired
     private StudentService service;
 
+    //接口文档
     @RequestMapping("list")
     public ModelAndView list(){
         List list = service.list();
