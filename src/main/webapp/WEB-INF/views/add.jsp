@@ -12,7 +12,7 @@
 <body>
     <form action="">
         名字：<input type="text" name="sname" value=""><br>
-        日期：<input type="text" name="sdata"><br>
+        <%--日期：<input type="text" name="sdata"><br>--%>
     </form>
     <input type="button" value="返回" onclick="goblack()">
     <input type="button" value="提交" onclick="tj()">

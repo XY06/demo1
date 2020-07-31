@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
+import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -36,6 +37,7 @@ public class StudentController {
     @RequestMapping("add")
     @ResponseBody
     public boolean add(Student student){
+        student.setSdata(new Date());
         service.add(student);
         return true;
     }
