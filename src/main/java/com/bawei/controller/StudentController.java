@@ -22,6 +22,7 @@ public class StudentController {
     //接口文档
     @RequestMapping("list")
     public ModelAndView list(){
+        //dqwdwqdwqd
         List list = service.list();
         ModelAndView mv = new ModelAndView();
         mv.addObject("list",list);
