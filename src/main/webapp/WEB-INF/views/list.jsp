@@ -36,6 +36,10 @@
             </td>
         </tr>
     </c:forEach>
+    <form action="file/upload" method="post" enctype="multipart/form-data">
+        <input type="file" name="file"/> <br>
+        <input type="submit" value="上传"/>
+    </form>
 </table>
 <script type="text/javascript">
     function toadd() {
