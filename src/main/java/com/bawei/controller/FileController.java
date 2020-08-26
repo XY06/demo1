@@ -1,7 +1,7 @@
 package com.bawei.controller;
 
-import lombok.Value;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -18,7 +18,7 @@ import java.net.URLEncoder;
 public class FileController {
 
 //    @Value("${filepath}")
-    private String filepath = "D:/file/";
+    private String filepath="D:/file/";
 
     /**
      * 处理文件上传
@@ -37,7 +37,7 @@ public class FileController {
             return "uploading failure";
         }
         log.info("文件上传成功!");
-        return "uploading success";
+        return "list";
     }
 
     @RequestMapping("/download")
