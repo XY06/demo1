@@ -38,6 +38,8 @@ public class StudentController {
     @RequestMapping("add")
     @ResponseBody
     public boolean add(Student student){
+        Date data = new Date();
+
         student.setSdata(new Date());
         service.add(student);
         return true;

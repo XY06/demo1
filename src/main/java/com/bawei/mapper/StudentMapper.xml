@@ -7,7 +7,7 @@
     <select id="list" resultType="com.bawei.bean.Student">
         select * from student
     </select>
-	<insert id="add">
+	<insert id="add" parameterType="com.bawei.bean.Student">
         insert into student values (null,#{sname},#{sdata})
     </insert>
     <select id="listupd" resultType="com.bawei.bean.Student">

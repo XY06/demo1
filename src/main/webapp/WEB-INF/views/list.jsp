@@ -40,6 +40,7 @@
         <input type="file" name="file"/> <br>
         <input type="submit" value="上传"/>
     </form>
+    <a href="/file/download">文件下载</a>
 </table>
 <script type="text/javascript">
     function toadd() {

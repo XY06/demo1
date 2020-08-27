@@ -42,8 +42,8 @@ public class FileController {
 
     @RequestMapping("/download")
     public void downLoad(HttpServletResponse response) throws UnsupportedEncodingException {
-        String filename="JAVA核心知识点整理.pdf";
-        String filePath = "D:/file" ;
+        String filename="美女 - 7.jpg";
+        String filePath = "D:/file/1" ;
         File file = new File(filePath + "/" + filename);
         if(file.exists()){
             response.setContentType("application/octet-stream");
